@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculadora</title>
+	<link rel="stylesheet" href="C:\Users\Jose\Desktop\Programación Web\Portfolio/calculadora.css">
+</head>
+<body>
+	<div id="appCal">
+		<form name="calc">
+			<input type="textfield" name="ans" value="" autocomplete="off" readonly>
+			<br>
+			<input type="button" value="7" onclick="document.calc.ans.value+='7'" class="gris">
+			<input type="button" value="8" onclick="document.calc.ans.value+='8'" class="gris">
+			<input type="button" value="9" onclick="document.calc.ans.value+='9'" class="gris">
+			<input type="button" value="+" onclick="document.calc.ans.value+='+'" class="naranja">
+			<br>
+			<input type="button" value="4" onclick="document.calc.ans.value+='4'" class="gris">
+			<input type="button" value="5" onclick="document.calc.ans.value+='5'" class="gris">
+			<input type="button" value="6" onclick="document.calc.ans.value+='6'" class="gris">
+			<input type="button" value="-" onclick="document.calc.ans.value+='-'" class="naranja">
+			<br>
+			<input type="button" value="1" onclick="document.calc.ans.value+='1'" class="gris">
+			<input type="button" value="2" onclick="document.calc.ans.value+='2'" class="gris">
+			<input type="button" value="3" onclick="document.calc.ans.value+='3'" class="gris">
+			<input type="button" value="X" onclick="document.calc.ans.value+='*'" class="naranja">
+			<br>
+			<input type="button" value="0" onclick="document.calc.ans.value+='0'" class="gris">
+			<input type="reset" value="C" class="gris">
+			<input type="button" value="=" onclick="document.calc.ans.value=eval(document.calc.ans.value)" class="gris">
+			<input type="button" value="/" onclick="document.calc.ans.value+='/'" class="naranja">
+		</form>	
+	</div>
+</body>
+</html>
